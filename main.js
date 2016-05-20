@@ -1,4 +1,15 @@
 const electron = require('electron')
+const express = require("express");
+
+var server = express();
+
+server.use(express.static("node_modules/debugger.html/public"));
+server.use(express.static("node_modules/debugger.html"));
+
+server.listen(3003, function () {
+  console.log('Debuggee Server listening on 3003!');
+});
+
 // Module to control application life.
 const app = electron.app
 // Module to create native browser window.
