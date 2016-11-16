@@ -1,19 +1,26 @@
 {
-  "name": "Debugger.App",
+  "name": "debugger.app",
   "version": "0.0.1",
-  "description": "Debugger.html standalon electron app",
+  "description": "Firefox Ap",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jasonLaster/debugger.app.git"
+  "bin": {
+    "start-dev-server": "./bin/start-debugger"
   },
+  "files": [
+    "bin"
+  ],
+  "repository": "https://github.com/jasonLaster/debugger.app",
+  "keywords": [
+    "Debugger",
+    "Firefox",
+    "Node"
+  ],
+  "author": "Jason Laster",
+  "license": "CC0-1.0",
   "devDependencies": {
-    "electron-prebuilt": "^1.1.1"
-  },
-  "dependencies": {
-    "express": "^4.13.4"
+    "electron": "^1.4.7"
   }
 }
