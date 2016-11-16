@@ -1,14 +1,14 @@
 const electron = require('electron')
-const express = require("express");
+// const express = require("express");
 
-var server = express();
-
-server.use(express.static("node_modules/debugger.html/public"));
-server.use(express.static("node_modules/debugger.html"));
-
-server.listen(3003, function () {
-  console.log('Debuggee Server listening on 3003!');
-});
+// var server = express();
+//
+// server.use(express.static("node_modules/debugger.html/public"));
+// server.use(express.static("node_modules/debugger.html"));
+//
+// server.listen(3003, function () {
+//   console.log('Debuggee Server listening on 3003!');
+// });
 
 // Module to control application life.
 const app = electron.app
@@ -21,13 +21,13 @@ let mainWindow
 
 function createWindow () {
   // Create the browser window.
-  mainWindow = new BrowserWindow({width: 800, height: 600})
+  mainWindow = new BrowserWindow({width: 1200, height: 600})
 
   // and load the index.html of the app.
-  mainWindow.loadURL(`file://${__dirname}/index.html`)
+  mainWindow.loadURL(`http://localhost:8000/`)
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
   mainWindow.on('closed', function () {

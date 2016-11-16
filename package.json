@@ -1,5 +1,5 @@
 {
-  "name": "Debugger.html",
+  "name": "Debugger.App",
   "version": "0.0.1",
   "description": "Debugger.html standalon electron app",
   "main": "main.js",
@@ -8,13 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron/electron-quick-start.git"
+    "url": "git+https://github.com/jasonLaster/debugger.app.git"
   },
   "devDependencies": {
     "electron-prebuilt": "^1.1.1"
   },
   "dependencies": {
-    "debugger.html": "0.0.4",
     "express": "^4.13.4"
   }
 }
